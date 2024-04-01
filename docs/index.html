@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Wiki Template</title>
+        <link rel="stylesheet" type="text/css" href="docs.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+
+    </head>
+
+    <body>
+        <div class="topMenu"><h1 class="topMenuText">Wiki Template</h1></div>
+        <div class="sideNav">
+             <a href="#entryHTMLPARAGRAPHTAG" class="sideNavLink">PARAGRAPH TAG</a>
+             <a href="#entryPUTTINGCODESNIPPITS" class="sideNavLink">Putting in Code Snippits</a>
+             <a href="#entryADDINGITEMSTOSIDEBAR" class="sideNavLink">Adding Items to Sidebar</a>
+        
+            </div>
+        <div class="content">
+        <h2 id="entryHTMLPARAGRAPHTAG">HTML PARAGRAPH TAG</h2>
+        <p><pre>the <code>&#60;p&#62;</code> tag in html is used for a paragraph <br> this is a new line</pre></p>
+        
+        <h2 id="entryPUTTINGCODESNIPPITS">Putting code snippits</h2>
+        <p>when including code snippits (this only applies to HTML) in these wiki pages you need to use the <code>&#60;code&#62;</code> tag followed by running the HTML tag through a HTML encoder like <a href="https://www.w3docs.com/tools/html-encoder/">this one.</a> After this put the new encoded test inside the mentioned html tag (hopefully your still keeping up) so the HTML should look something like this <code>&#60;code&#62;&#38;#60;p&#38;#62;&#38;#60;/p&#38;#62;&#60;/code&#62;</code></a></p>
+         
+        <h2 id="entryADDINGITEMSTOSIDEBAR">Adding items to the sidebar</h2>
+        <p>when adding items to the sidebar you first need to make sure you have set the id of the header you want your link to jump to. for example <code>&#60;h2 id="titleofarticle"&#62;&#60;/h2&#62;</code>. Then put an a tag <code>(&#60;a href=""&#62;&#60;/a&#62;)</code> inside your div with the class "sideNav" (<code>&#60;div class="sideNav"&#62; &#60;/div&#62;</code>). to finish this all off you make the href property in your a tag #nameofyourheadersid it should look something like this.<br></p>
+
+        <p>
+            &#60;div class="sideNav"&#62;<br>
+            &#60;a href="#titleofwikientry" class="sideNavLink"&#62;titleofwikientry&#60;/a&#62;<br>
+            &#60;/div&#62;<br><br>
+
+            &#60;div class="content"&#62;<br>
+            &#60;h2 id="titleofwikientry"&#62;TITLE OF ENTRY&#60;/h2&#62;<br>
+            &#60;p&#62;sample paragraph&#60;/p&#62;<br>
+            &#60;/div&#62;
+        </p>
+
+        <p><i>Note: div classes properties are assigned in the docs.css file</i></p>
+
+        </div>
+
+    </body>
+</html>
